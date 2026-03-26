@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sec-1-opending</title>
+    <link rel="stylesheet" href="../src/sec_open_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            
+            <div class="center">
+                <span>Cursor</span>
+            </div>
+            
+            
+            <div class="right">
+                <!-- <span>Get Cursor</span>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div> -->
+            </div>
+        </header>
+        <hr>
+        <main>
+            <div class="mainContainer">
+                <div class="left-nav">
+                    <div class="inProcess">
+                        <p class="nav-title">IN PROCESS 3</p>
+                        <button class="btn-sec1"><img src="">Enterprise Order Managemen.. <br> <span class="generating">Generating</span></button>
+                        <button class="btn-sec1"><img src="">Analyze Tab vs Agent Usage P.. <br> <span class="generating">Generating</span></button>
+                        <button class="btn-sec1"><img src="">Fix PR Comments Fetching Iss.. <br> <span class="generating">Generating</span></button>
+                    </div>
+
+                    <div class="readyForReview">
+                        <p class="nav-title">READY For Review 3</p>
+                        <button class="btn-sec1">
+                            <img src="">PyTouch MNIST Experim... <br>
+                            <span class="count" style="color: green;">+168</span>
+                            <span class="count" style="color: red;">-37</span> 
+                            <span class="generating">. Done, configurable M...</span>
+                        </button>
+                        <button class="btn-sec1">
+                            <img src="">Set up Cursor Rules for... <br>
+                            <span class="count" style="color: green;">+37</span>
+                            <span class="count" style="color: red;">-0</span> 
+                            <span class="generating">. Set up Cursor Rules...</span>
+                        </button>
+                        <button class="btn-sec1">
+                            <img src="">Bioinformatics Tools... <br>
+                            <span class="count" style="color: green;">+135</span>
+                            <span class="count" style="color: red;">-21</span> 
+                            <span class="generating">. Bioinformatics Tools...</span>
+                        </button>
+                        
+                    </div>
+                </div>
+    
+                <div class="center-editior" style="min-width: 500px; min-height: 500px;">
+                    <div class="fixed-title">
+                        <p>PyTouch MNIST Experiments</p>
+                        <div class="static-desc">Add mixed precision training, learning rate scheduling, and proper validation. Also create an experiment config system so I can easily run different hyperparameter settings.</div>
+                    </div>
+                    <div class="result"> 
+                        <div class="basic-info">
+                            <span class="info-title">Thought </span>
+                            <span class="info-result">10s</span>
+                        </div>
+                        <div class="basic-info">
+                            <span class="info-title">Searched</span>
+                            <span class="info-result">PyTorch mixed precision training best practices</span>
+                        </div>
+                        <div class="basic-info">
+                            <span class="info-title">Read</span>
+                            <span class="info-result">notebooks/train_model.py (current implementation)</span>
+                        </div>
+    
+                        <p>I'll enhance your MNIST trainer with a complete experiment framework including mixed precision, validation splitting, and proper configuration management. Let me start by rewriting the training module:</p>
+                        
+                        <button class="btn-sec1" id="pdf">train_model.py
+                            <span class="count" style="color: green;">+135</span>
+                            <span class="count" style="color: red;">-21</span> 
+                        </button> <br>
+                        
+                        <p>Now let me update the evaluation module to save results and generate a detailed report:</p>
+                        <button class="btn-sec1" id="pdf">evaluation.py
+                            <span class="count" style="color: green;">+24</span>
+                            <span class="count" style="color: red;">-6</span> 
+                        </button> <br>
+                        
+                        <p>Let me create a command-line runner script to make experiments easy to execute:</p>
+                        <button class="btn-sec1" id="pdf">run_experiment.py
+                            <span class="count" style="color: green;">+29</span> 
+                        </button> <br>
+    
+                        <p>
+                            Done, configurable MNIST experiment framework with AMP and reports.
+                            <div class="listcontainer">
+                                
+                                <ul id="list-items">
+                                    <li>Training: AMP, train/val split, cosine schedule, gradient clipping, checkpoints</li>
+                                    <li>Experimentation: YAML config, saved history, confusion matrix + classification report</li>
+                                </ul>
+                            </div>
+                        </p>
+                    </div>
+    
+                    <div class="prompt-input">
+                        <input type="text" placeholder="Plan, Search, Build Anything...">
+                        <div class="input-control">
+                            <div class="agent_btn">
+                                <button class="agent_btn" id="agent">Agent</button>
+                                <select id="model" class="agent_btn">
+                                    <option value="">GPT-5.2</option>
+                                </select>
+
+                            </div>
+                            <button id="arrow" class="agent_btn">arrao</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+
+  "scripts": {
+    "build": "tsc",
+    "run": "npm run build && node"
+  },
+
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
