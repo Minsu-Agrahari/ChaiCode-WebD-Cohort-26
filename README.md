@@ -6,121 +6,52 @@ Welcome to the **ChaiCode Web Development Cohort-26** repository! This workspace
 
 ## 📚 Folder Structure
 
-```
+```text
 ChaiCode-WebD-Cohort-26/
-├── 00-DSA-Masterji-js/                    # Data Structures & Algorithms (JavaScript/TypeScript)
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── README.md
-│   └── src/
-│       ├── evenDifferencePartition.ts
-│       ├── pangramChecker.ts
-│       ├── rightRotation.ts
-│       ├── smallestNum.ts
-│       ├── sqrt.ts
-│       ├── twoHalves.ts
-│       └── valid_Sub-Array_withAverage.ts
-│
-├── 00-Masterji-Assignments/               # Main Projects & Assignments
-│   ├── 01-Projects/
-│   │   ├── 01-Resume/                     # Personal Resume Project
-│   │   │   ├── index.html
-│   │   │   └── readme.md
-│   │   ├── 02-cursor-website/             # Cursor Website Project
-│   │   │   ├── index.html
-│   │   │   ├── readme.md
-│   │   │   ├── assets/                    # Images and icons
-│   │   │   ├── pages-Folders/             # Separate HTML pages
-│   │   │   └── src/                       # CSS files
-│   │   └── 03-mintify-landingPage/        # Landing Page Project
-│   │       ├── index.html
-│   │       ├── readme.md
-│   │       ├── asset/                     # Project assets
-│   │       └── src/                       # Stylesheets
-│   │
-│   ├── 02-Assignments/
-│   │   └── Github-assignment/             # GitHub-based Assignments
-│   │       ├── js-conditionals-Minsu-Agrahari/
-│   │       ├── js-datatypes-foundation-Minsu-Agrahari/
-│   │       ├── js-datatypes-Minsu-Agrahari/
-│   │       ├── js-functions-Minsu-Agrahari/
-│   │       └── js-loops-Minsu-Agrahari/
-│   │
-│   └── 03-Articles-HashNode/              # Technical Articles
-│       ├── readme.md
-│       ├── 00-stack-atlast logo/
-│       ├── 01-Git-Article-links/
-│       ├── 02-Networking-Article-links/
-│       ├── 03-DNS-Article-links/
-│       └── 04-HtmlCss-Article-links/
-│
-├── 01-Weekend-Classes/                    # Weekend Learning Sessions
-│   ├── 01-Tools/
-│   │   ├── 01-Intro to Git/               # Git Introduction
-│   │   │   └── Links.txt
-│   │   └── 02-Git Version Control/        # Git Advanced Topics
-│   │       └── Git-Cheat Sheet.txt
-│   ├── 02-Fundamentals/
-│   ├── 03-Building Blocks/                # HTML & CSS Fundamentals
-│   │   ├── Links - grid & flex.txt
-│   │   ├── 01-HTML/
-│   │   └── 02-CSS/
-│   ├── 04-Interacting with Browser/       # JavaScript & DOM
-│   │   ├── 01-JavaScript/
-│   │   └── 02-CodeFile-js/                # JS Practice Code
-│   │       ├── 01-js_basics/
-│   │       ├── 02-js_basics/
-│   │       ├── 03-js_basics_2/
-│   │       ├── 04-js_basics_3/
-│   │       ├── 05-js_basics_4/
-│   │       └── 06-js_basics_5/
-│   └── 05-Backend Engineering/            # Backend Development
-│       └── 01-CodeFiles/
-│           ├── 01-my_script_ts.ts
-│           ├── 02.1-Hitesh_sir_Code_ts/
-│           ├── 02.2-express_typescript_/
-│           ├── 03-nodejs_internals/
-│           └── 04-express_class/
-│
-├── 02-T-Classes/                          # Tutoring/Teaching Sessions
-│   ├── CodeFile/
-│   │   ├── 01-js_refresher.js
-│   │   ├── 02-code/
-│   │   ├── 03-t_5_lyst1772137447915/
-│   │   └── 04-t_5_and_t_6_/
-│   └── Notes/
-│
-└── 03-Peer Classes/                       # Peer Learning & Collaboration
+├── 00-Connection-Links/                   # Vital connection links (e.g., GitHub profiles)
+├── 01-Weekend-Classes/                    # Weekend Learning Sessions & Practice Code
+├── 02-T-Classes/                          # Tutoring Sessions (CodeFiles and Notes)
+├── 03-Peer Classes/                       # Peer Learning & Collaboration materials
+├── 04-Masterji-Assignments/               # Main Projects, GitHub Assignments, HashNode Articles
+├── 05-DSA-Masterji-js/                    # Data Structures & Algorithms implementations (TS)
+└── 06-YT/                                 # YouTube specific tutorial follow-alongs
 ```
 
 ---
 
 ## 🎯 Course Sections
 
-### **00-DSA-Masterji-js**
-Contains Data Structures & Algorithms implementations using TypeScript:
-- Problem solving techniques
-- Algorithm optimization
-- Custom data structure implementations
-
-### **00-Masterji-Assignments**
-Main coursework organized into three areas:
-1. **Projects** - Full-stack web projects from scratch
-2. **Assignments** - Topic-specific GitHub assignments
-3. **Articles** - Technical writing and documentation on web dev topics
+### **00-Connection-Links**
+Centralized repository for important links and mentor profiles.
 
 ### **01-Weekend-Classes**
 Structured weekend learning materials:
 - **Tools** - Git and version control fundamentals
+- **Fundamentals** - Core programming fundamentals
 - **Building Blocks** - HTML & CSS essentials
 - **Interacting with Browser** - JavaScript and DOM manipulation
 - **Backend Engineering** - Node.js, Express, and backend concepts
 
 ### **02-T-Classes**
-Code files and notes from tutoring sessions
+Code files and conceptual notes from dedicated tutoring sessions.
 
 ### **03-Peer Classes**
-Collaborative learning materials from peer sessions
+Collaborative learning materials from peer pairing sessions.
+
+### **04-Masterji-Assignments**
+Main coursework organized into three areas:
+1. **Projects** - Full-stack web projects from scratch (Resume, Cursor Website, etc.)
+2. **Assignments** - Topic-specific GitHub assignments
+3. **Articles** - Technical writing and documentation on web dev topics
+
+### **05-DSA-Masterji-js**
+Contains Data Structures & Algorithms implementations using TypeScript:
+- Problem-solving techniques
+- Algorithm optimization
+- Custom data structure implementations
+
+### **06-YT**
+Workspace for following along with YouTube-based technical tutorials.
 
 ---
 
@@ -128,11 +59,11 @@ Collaborative learning materials from peer sessions
 
 1. **Setup DSA Environment**: 
    ```bash
-   cd 00-DSA-Masterji-js
+   cd 05-DSA-Masterji-js
    npm install
    ```
-3. **Explore Projects**: Check individual project folders for setup instructions
-4. **Reference Materials**: Use the weekend class materials as a learning guide
+2. **Explore Projects**: Check individual project folders in `04-Masterji-Assignments/01-Projects` for setup instructions.
+3. **Reference Materials**: Use the weekend class materials as a learning guide.
 
 ---
 
@@ -140,17 +71,13 @@ Collaborative learning materials from peer sessions
 
 | Icon | Resource | Path | Description |
 |------|----------|------|-------------|
-| 📱 | Resume Project | [01-Resume](00-Masterji-Assignments/01-Projects/01-Resume) | Personal Resume Project |
-| 🌐 | Cursor Website | [02-cursor-website](00-Masterji-Assignments/01-Projects/02-cursor-website) | Cursor Website Project |
-| 🎨 | Landing Page | [03-mintify-landingPage](00-Masterji-Assignments/01-Projects/03-mintify-landingPage) | Mintify Landing Page Project |
-| 📊 | DSA Masterji | [00-DSA-Masterji-js](00-DSA-Masterji-js) | Data Structures & Algorithms |
-| 📝 | Assignments | [02-Assignments](00-Masterji-Assignments/02-Assignments) | GitHub-based assignments |
-| 📚 | Articles | [03-Articles-HashNode](00-Masterji-Assignments/03-Articles-HashNode) | Technical articles from HashNode |
-| 🔀 | Git Resources | [01-Tools/02-Git Version Control](01-Weekend-Classes/01-Tools/02-Git%20Version%20Control) | Git cheat sheets and guides |
-| 💻 | JavaScript Practice | [02-CodeFile-js](01-Weekend-Classes/04-Interacting%20with%20Browser/02-CodeFile-js) | JavaScript practice code |
-| 🏗️ | Backend Engineering | [05-Backend Engineering](01-Weekend-Classes/05-Backend%20Engineering) | Node.js, Express, and backend concepts |
-| 🎓 | HTML & CSS | [03-Building Blocks](01-Weekend-Classes/03-Building%20Blocks) | HTML and CSS fundamentals |
-| 👥 | T-Classes | [02-T-Classes](02-T-Classes) | Tutoring sessions and code examples |
+| 🔗 | Connection Links | [00-Connection-Links](00-Connection-Links) | Important links and profiles |
+| 🎓 | Weekend Classes | [01-Weekend-Classes](01-Weekend-Classes) | Core learning materials |
+| 👥 | T-Classes | [02-T-Classes](02-T-Classes) | Tutoring sessions and notes |
+| 🤝 | Peer Classes | [03-Peer Classes](03-Peer Classes) | Collaborative learning |
+| 📝 | Assignments | [04-Masterji-Assignments](04-Masterji-Assignments) | Projects, Assignments, Articles |
+| 📊 | DSA Masterji | [05-DSA-Masterji-js](05-DSA-Masterji-js) | Data Structures & Algorithms |
+| 📺 | YT Tutorials | [06-YT](06-YT) | YouTube follow-along workspace |
 
 ---
 
@@ -168,8 +95,7 @@ Collaborative learning materials from peer sessions
 
 - Check individual project README files for specific instructions
 - Review assignment criteria before starting
-- Use Git Cheat Sheet for version control questions
-- Refer to technical articles for concept clarification
+- Follow along with YT tutorials for practical insight
 
 ---
 
