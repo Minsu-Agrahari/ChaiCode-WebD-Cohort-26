@@ -38,3 +38,4 @@
     console.log(maximizeCandyFlavorMix([2,8,4,8]));
     console.log(maximizeCandyFlavorMix([10, 12]));
     console.log(maximizeCandyFlavorMix([1, 2]));
+    

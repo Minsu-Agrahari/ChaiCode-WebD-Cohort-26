@@ -62,7 +62,7 @@ type User = {
 
 const u:User = {
     username: "chaicode",
-    // password: "123"     <<----- if this is present than there is no issue, but if it is remove than it will show error
+    password: "123" // <<----- if this is present than there is no issue, but if it is remove than it will show error
 }
 
 // ----------------------------------------------------------------------------------
@@ -151,35 +151,3 @@ const publicChaiRecipe: publicChai = {
 }
 
 console.log(publicChaiRecipe);
-// ----------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
