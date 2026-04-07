@@ -1,0 +1,17 @@
+{
+  "name": "02-backend-with-ts",
+  "version": "1.0.0",
+  "description": "Creating Raw Server || Writting Raw HTTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.22.1",
+    "node": "^25.9.0"
+  }
+}
