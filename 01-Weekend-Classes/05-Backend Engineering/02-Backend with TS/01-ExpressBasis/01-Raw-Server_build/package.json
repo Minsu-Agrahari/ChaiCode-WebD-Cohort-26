@@ -1,0 +1,16 @@
+{
+  "name": "01-raw-server_build",
+  "version": "1.0.0",
+  "description": "Building a Web-Server from basics",
+  "license": "ISC",
+  "author": "Minsu Agrahari",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "express": "^5.2.1",
+    "node": "^25.9.0"
+  }
+}
