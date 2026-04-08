@@ -155,6 +155,11 @@ function block_2_httpMethods() {
             .patch((req, res) => { })
             .delete((req, res) => { })
 
+        
+        // Prefetch match -> this will run first, before HTTP methods
+        app.use("/api", (req, res) => {
+            // its a prefetch match
+        })
 
         // ⌨️ Building Server                     ⬇
         const server = app.listen(0, async () => {
