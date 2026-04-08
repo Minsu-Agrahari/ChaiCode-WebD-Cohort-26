@@ -19,7 +19,7 @@ export function createServerApplication(): Application {
     const app = express();
 
     // creating Rout:-
-    
+
     // // 🎯 GET Rout
     // app.get('/', function (req, res) {
     //     return res.json({ message: 'Hello ji kaise hoo server started... ' })
@@ -29,7 +29,10 @@ export function createServerApplication(): Application {
     //     return res.json({ message: 'BYE ...  ' })
     // });
 
-    app.use('/todos', todoRouter); // if any request start with '/todos', user todoRouter
+    // ⚠️ Express can read/ accepts JSON
+    app.use(express.json());
     
+    app.use('/todos', todoRouter); // if any request start with '/todos', user todoRouter
+
     return app;
 }

@@ -9,7 +9,7 @@ router.get('/', controller.handleGetAllTodos.bind(controller));
 // router.get('/:id');
 
 // // POST routs
-// router.post('/');
+router.post('/', controller.handleInsertTodo.bind(controller));
 
 // // PUT routs
 // router.put('/:id');
