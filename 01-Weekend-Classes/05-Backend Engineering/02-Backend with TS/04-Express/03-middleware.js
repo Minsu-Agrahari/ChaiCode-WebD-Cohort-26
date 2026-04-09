@@ -108,6 +108,26 @@ function block_1_httpMethods() {
         app.get('/profile', authMe, getRole(['admin']), oneMore, () => { })
         app.get('/profile', authMe, getRole(['admin', 'teacher', 'student']), oneMore, () => { })
 
+
+        // Building custom rate-Limiting
+        function rateLimit(maxRequest) {
+            let count = 0;
+
+            return (req, res, next) => {
+                count++;
+
+                if (count > maxRequest) {
+                    return res.status(429).json({ error: "Too many request, please try after some time" });
+                }
+
+                next();
+            }
+        }
+
+        const limitedEndPoint = rateLimit(3); // only 3 request will be handled
+        app.get('/limited', limitedEndPoint, (req, res) => { });
+
+
         // ⌨️ Building Server                     ⬇
         const server = app.listen(0, async () => {
 
