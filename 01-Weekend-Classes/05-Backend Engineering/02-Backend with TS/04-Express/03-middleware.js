@@ -7,7 +7,15 @@ function block_1_httpMethods() {
         const logs = [];
 
         // use --> middleware 
+        // app.use is for build in documnet
         app.use(express.json()); // now will express understand ( json ) 
+        // ⚠️ app.use(express.json({limit: '50kb'})); // limit the DATA received by express
+        // ⚠️ app.use(express.urlencoded({extended: true, limit: '50kb'})); // ENCODE URL :- Minsu%20Agrahari
+        // 🥢⚠️ app.use(express.static(//TODO)); // ENCODE URL :- Minsu%20Agrahari
+        app.use(express.static(ShadowRoot, {
+            dotfiles: 'ignore',
+            maxAge: 0,
+        }))
 
         // request logger:- koi be request aaye ki who isse go through hoo kar jhaye ka
         // Writting/BUILDING MY OWN MIDDLEWARE
