@@ -16,6 +16,11 @@ class ApiError extends Error {
         return new ApiError(401, message)
     }
     
+    static conflict (message = "Conflict"){
+        return new ApiError(409, message)
+    }
+    
+
 }
 
 // throw new ApiError() <-- how to use it << syntax >>
