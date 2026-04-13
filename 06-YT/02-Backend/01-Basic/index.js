@@ -1,10 +1,11 @@
+require('dotenv').config()
 const express = require('express')
+
 const app = express()
-const port = 65000
 
 // routes
-app.listen(port, (req, res) => {
-    console.log(`Example app listening on port ${port} ...`)
+app.listen(process.env.PORT, (req, res) => {
+    console.log(`Example app listening on port ${process.env.PORT} ...`)
 })
 
 app.get('/', (req, res) => {
@@ -17,7 +18,7 @@ app.get('/twitter', (req, res) => {
 
 app.get('/login', (req, res) => {
     res.send('<h1>Please login at chai aur code</h1>')
-})
+})  
 
 app.get('/minsu', (req, res) => {
     res.send("<h2>I am Full stack Developer</h2>")
