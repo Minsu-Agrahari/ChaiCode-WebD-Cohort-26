@@ -23,6 +23,7 @@ const verifyRefreshToken = (token) => {
     return jwt.verify(token, process.env.JWT_REFERSH_SECRET);
 }
 
+// Hashing
 const generateResetToken = () => {
     const rawToken = crypto.randomBytes(32) / toString("hex")
     const hashedToken = crypto
