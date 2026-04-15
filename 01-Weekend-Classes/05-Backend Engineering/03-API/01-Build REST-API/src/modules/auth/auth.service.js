@@ -46,10 +46,13 @@ const login = async ({ email, password }) => {
     const user = await User.findOne({ email }).select("+password")
     if (!user) throw ApiError.unauthorized("Invalid Email or password");
 
-    // somehow I will check Password
+    // TODO: somehow I will check Password
+    // compare return a boolean value
+    const isMatch = await user.comparePassword(password);
+    if (!isMatch) throw ApiError.unauthorized("Invalid email or password");
 
     if (!user.isVerified) {
-        throw ApiError.forbidden("Please verify your email before login")
+        throw ApiError.forbidden("Please verify your email before login");
     }
 
     // Generate Access Token
@@ -92,20 +95,21 @@ const refresh = async (token) => {
 };
 
 const logout = async (userId) => {
+    // ⚠️ AI-CODE
     // const user = await User.findById(userId);
     // if (!user) throw ApiError.unauthorized("User not found");
 
     // user.refreshToken = undefined; // undefinded or null (AI says null ??)
     // await user.save({ validatedBeforeSave: false });
 
-    await User.findByIdAndUpdate(userId, {refreshToken: null})
-}; 
+    await User.findByIdAndUpdate(userId, { refreshToken: null })
+};
 
 const forgotPassword = async (email) => {
-    const user = await User.findOne({email})
-    if(!user) throw ApiError.notFound("No account with that email")
+    const user = await User.findOne({ email })
+    if (!user) throw ApiError.notFound("No account with that email")
 
-    const {rawToken, hashedToken} = generateResetToken();
+    const { rawToken, hashedToken } = generateResetToken();
     user.resetPasswordtoken = hashedToken
     user.resetPasswordExpires = Date.now() + 15 * 60 * 1000
 
@@ -114,6 +118,12 @@ const forgotPassword = async (email) => {
     // TODO: mail bhejna nhi aata
 }
 
-// resetPassword
+const getMe = async (userId) => {
+    const user = await User.findById(userId)
+    if(!user) throw ApiError.notFound("User not found");
+    return user;
+};
 
-export { register };
+// TODO: resetPassword
+
+export { register, login, refresh, logout, forgotPassword };
