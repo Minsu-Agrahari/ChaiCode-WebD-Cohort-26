@@ -45,3 +45,8 @@ const sendVerificationEmail = async(email, token) => {
         html,
     })
 }
+
+export{
+    sendMail,
+    sendVerificationEmail,
+};
