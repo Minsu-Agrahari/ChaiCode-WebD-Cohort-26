@@ -130,6 +130,20 @@ const getMe = async (userId) => {
     return user;
 };
 
+const verifyEmail = async (token) =>{
+    const hashedToken = hashToken(token);
+    const user = await User.findOne({verificationToken: hashedToken}).select("+verificationToken")
+
+    // TODO: if user not found
+
+    user.isVerified = true;
+    user.verificationToken = undefined
+    await user.save()
+    return user;
+
+    // TODO: write controller
+};
+
 // TODO: resetPassword
 
-export { register, login, refresh, logout, forgotPassword };
+export { register, login, refresh, logout, forgotPassword, getMe, verifyEmail };
