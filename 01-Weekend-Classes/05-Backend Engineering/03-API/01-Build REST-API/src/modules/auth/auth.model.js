@@ -1,4 +1,5 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
+import bcrypt from "bcryptjs";
 
 const userSchema = new mongoose.Schema({
     // key: value
@@ -32,24 +33,38 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
-    verificationToken:{
+    verificationToken: {
         type: String,
         select: false,
     },
-    refreshToken:{
+    refreshToken: {
         type: String,
         select: false,
     },
-    resetPasswordtoken:{
+    resetPasswordtoken: {
         type: String,
         select: false,
     },
-    resetPasswordExpires:{
+    resetPasswordExpires: {
         type: Date,
         select: false,
     },
-}, {timestamps: true})
+}, { timestamps: true });
 
+
+// hook
+userSchema.pre('save', async function (next) {
+    if (!this.isModified("password")) return next()
+
+    this.password = await bcrypt.hash(this.password, 12) // salt value = 10 or 12, not more than 12
+
+    next();
+})
+
+userSchema.methods.comparePassword = async function (clearTextPassword) {
+    // return await bcrypt.compare(clearTextPassword, this.password);
+    return bcrypt.compare(clearTextPassword, this.password);
+};
 //                          table name || schema
 //                              ⬇           ⬇
 export default mongoose.model("User", userSchema)
