@@ -2,7 +2,11 @@ import { createServer } from 'node:http'
 import { createApplication } from './app'
 async function main() {
     try {
-        const server = createServer(createApplication);
+        // const server = createServer(createApplication());
+
+        const app = createApplication();
+        const server = createServer(app);
+
         const PORT: number = 8080;
 
         server.listen(PORT, () => {

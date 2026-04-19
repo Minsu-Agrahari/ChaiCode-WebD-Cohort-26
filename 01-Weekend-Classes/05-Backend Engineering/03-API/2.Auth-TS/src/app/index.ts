@@ -3,13 +3,14 @@ import type { Express } from 'express';
 
 export function createApplication(): Express {
     const app = express();
-
+    app.use(express.json());
+    
     // Middlewares
 
 
     // Routes
     app.get('/', (req, res) => {
-        return res.json({ message: `Welcome to ChaiCode Auth Service` });
+        return res.json({ message: 'Welcome to ChaiCode Auth Service' });
     })
 
     return app;
