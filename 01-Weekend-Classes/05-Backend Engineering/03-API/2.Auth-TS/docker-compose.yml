@@ -1,0 +1,18 @@
+services:
+  postgresdb:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: chaicode 
+
+      # docker stores data at location:- "/var/lib/postgresql/data"
+      # when the docker is close the data is losted
+      # VOLUME:- we choise a location in the local-machine and we can move data from location "var/lib/postgresql/data" to another location "chaicode"
+    volumes:
+      - 'postgres_data:/var/lib/postgresql/data'
+
+volumes: 
+  postgres_data:
