@@ -5,6 +5,7 @@ import { db } from '../../db';
 import { userTable } from '../../db/schema';
 import { eq } from 'drizzle-orm';
 import { createUserToken } from './utils/token';
+import type { UserTokenPayload } from './utils/token'
 
 class AuthenticationController {
     public async handleSignup (req: Request, res: Response){
@@ -55,6 +56,19 @@ class AuthenticationController {
         return res.json({message: 'Signin Success', data: {token}})
     }
 
+    public async handleMe(req: Request, res: Response) {
+
+        // @ts-ignore
+        const { id } = req.user! as UserTokenPayload
+
+        const [userResult] = await db.select().from(userTable).where(eq(userTable.id, id))
+        
+        return res.json({
+            firstName: userResult?.firstName,
+            lastName: userResult?.lastName,
+            email: userResult?.email
+        })
+    }
 }
 
 export default AuthenticationController
