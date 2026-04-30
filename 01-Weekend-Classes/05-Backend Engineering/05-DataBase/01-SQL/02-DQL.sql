@@ -87,4 +87,3 @@ FROM ipl_players;
 SELECT 
     DISTINCT role
 FROM ipl_players;
-
