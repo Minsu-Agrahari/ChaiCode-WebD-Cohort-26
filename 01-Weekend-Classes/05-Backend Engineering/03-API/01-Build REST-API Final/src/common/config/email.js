@@ -46,9 +46,9 @@ const sendOrderConfirmationEmail = async (email, order) => {
     email,
     `Order Confirmed — ${order.orderNumber}`,
     `<h2>Order Confirmed!</h2>
-     <p>Order: ${order.orderNumber}</p>
-     <ul>${items}</ul>
-     <p><strong>Total: ₹${order.totalAmount}</strong></p>`,
+    <p>Order: ${order.orderNumber}</p>
+    <ul>${items}</ul>
+    <p><strong>Total: ₹${order.totalAmount}</strong></p>`,
   );
 };
 

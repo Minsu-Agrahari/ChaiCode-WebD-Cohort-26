@@ -16,16 +16,8 @@ router.post("/login", validate(LoginDto), controller.login);
 router.post("/refresh-token", controller.refreshToken);
 router.post("/logout", authenticate, controller.logout);
 router.get("/verify-email/:token", controller.verifyEmail);
-router.post(
-  "/forgot-password",
-  validate(ForgotPasswordDto),
-  controller.forgotPassword,
-);
-router.put(
-  "/reset-password/:token",
-  validate(ResetPasswordDto),
-  controller.resetPassword,
-);
+router.post("/forgot-password",validate(ForgotPasswordDto), controller.forgotPassword);
+router.put("/reset-password/:token", validate(ResetPasswordDto), controller.resetPassword,);
 router.get("/me", authenticate, controller.getMe);
 
 export default router;

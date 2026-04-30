@@ -9,7 +9,7 @@ class RegisterDto extends BaseDto {
       .min(8)
       .pattern(/(?=.*[A-Z])(?=.*\d)/)
       .message(
-        "Password must contain at least one uppercase letter and one digit",
+        "Password must contain at least one uppercase letter and one digit"
       )
       .required(),
     role: Joi.string().valid("customer", "seller").default("customer"),

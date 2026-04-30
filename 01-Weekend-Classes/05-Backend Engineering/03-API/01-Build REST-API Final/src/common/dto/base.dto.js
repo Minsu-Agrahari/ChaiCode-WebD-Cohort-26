@@ -6,9 +6,9 @@ class BaseDto {
     static schema = Joi.object({})
 
     static validate(data){
-       const {error, value} =  this.schema.validate(data, {
-            abortEarly: false,
-            stripUnknown: true
+        const {error, value} =  this.schema.validate(data, {
+            abortEarly: false, // Show all errors, not just first one.
+            stripUnknown: true // Removes fields not allowed in schema.
         })
 
         if(error){
